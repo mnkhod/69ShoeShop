@@ -1,15 +1,15 @@
 const express = require('express')
 const path = require('path');
 
-var livereload = require("livereload");
-var connectLiveReload = require("connect-livereload");
+// var livereload = require("livereload");
+// var connectLiveReload = require("connect-livereload");
 
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
+// const liveReloadServer = livereload.createServer();
+// liveReloadServer.server.once("connection", () => {
+//   setTimeout(() => {
+//     liveReloadServer.refresh("/");
+//   }, 100);
+// });
 
 const app = express()
 const port = 3000
