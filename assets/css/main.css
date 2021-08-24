@@ -112,7 +112,7 @@ body{
 
 #slider .buttonContainer{
   display: flex;
-  z-index: -100;
+  z-index: 100;
   position: absolute;
   bottom: 3%;
   width: 100%;
