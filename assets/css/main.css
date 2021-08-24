@@ -682,7 +682,7 @@ body{
 
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   #slider .shoeImage{
     width: auto;
     height: 60px;
