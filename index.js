@@ -15,7 +15,7 @@ const app = express()
 const port = 3000
 
 app.use(express.static('assets'))
-app.use(connectLiveReload());
+// app.use(connectLiveReload());
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname+'/index.html'))
