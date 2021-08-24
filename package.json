@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --ext html,js,css"
+    "start": "node index.js",
+    "dev": "nodemon --ext html,js,css"
   },
   "keywords": [],
   "author": "",
