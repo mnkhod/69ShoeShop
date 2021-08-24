@@ -1,0 +1,824 @@
+body{
+  margin: 0;
+  font-family: Barlow,sans-serif;
+}
+
+
+
+#header{
+  display: flex;
+  height: auto;
+  width: 100%;
+  position: absolute;
+}
+
+#header .logoContainer{
+  display: flex;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+}
+
+#header .logoContainer .logo{
+  margin-top: 15px;
+  width: 150px;
+  height: auto;
+}
+
+#slider{
+  display:flex;
+  height: 60vh;
+  width: 100%;
+
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#slider .backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+}
+
+#slider .middleContainer{
+  display: flex;
+  align-items: center;
+  margin: 0 4%;
+}
+
+#slider .shoeImageContainer{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#slider .shoeImage{
+  width: 650px;
+  height: auto;
+
+  animation: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+#slider .titleContainer{
+  color: white;
+  font-family: Barlow,sans-serif;
+  font-weight: 400;
+}
+
+#slider .titleContainer h3{
+  font-size: 20px;
+  margin:0;
+}
+
+#slider .titleContainer h2{
+  font-size: 60px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+
+#slider .contact{
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  display: flex;
+}
+
+#slider .contact li{
+  font-family: Barlow,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 15px;
+  list-style-type: none;
+  opacity: 0.5;
+}
+
+#slider .contact a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  z-index: 200;
+}
+
+#slider .buttonContainer{
+  display: flex;
+  z-index: -100;
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+}
+
+#slider .button{
+  cursor: pointer;
+  font-family: Barlow,sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background-color: #222;
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: none;
+}
+
+
+#ad .top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#ad .top .leftSide {
+  flex-basis: 45%;
+  font-family: Barlow,sans-serif;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+#ad .top .leftSide img {
+  width: 230px;
+  height: auto;
+  margin-bottom: 10px;
+  animation: heartBeat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#ad .top .leftSide h3 {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 10px 0;
+  color: #222;
+}
+
+#ad .top .leftSide h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+}
+
+#ad .top .rightSide {
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#ad .top .rightSide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -100;
+}
+
+#ad .top .rightSide .contentContainer {
+  margin-left: 2%;
+  width: 33%;
+  color: white;
+  font-family: Barlow,sans-serif;
+}
+
+#ad .top .rightSide h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#ad .top .rightSide h3 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#ad .top .rightSide button {
+  cursor: pointer;
+  font-family: Barlow,sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background-color: #222;
+  padding: 15px 65px;
+  border-radius: 50px;
+  border: none;
+}
+
+
+
+#ad .bottom .leftSide {
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#ad .bottom .leftSide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -100;
+}
+
+#ad .bottom .leftSide .contentContainer {
+  margin-right:2%;
+  width: 53%;
+  color: white;
+  text-align: right;
+}
+
+#ad .bottom .leftSide h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+#ad .bottom .leftSide h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#ad .bottom .leftSide button {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background-color: #222;
+  padding: 15px 65px;
+  border-radius: 50px;
+  border: none;
+}
+
+#ad .bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#ad .bottom .rightSide {
+  flex-basis: 45%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+#ad .bottom .rightSide img {
+  width: 230px;
+  height: auto;
+  margin-bottom: 10px;
+  animation: heartBeat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#ad .bottom .rightSide h3 {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 10px 0;
+  color: #222;
+}
+
+#ad .bottom .rightSide h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+}
+
+
+
+
+
+#newArrivalProducts {
+  margin: 50px 0;
+}
+
+#newArrivalProducts h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#newArrivalProducts .productContainer {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+#newArrivalProducts .productCardContainer {
+  padding: 10px;
+}
+
+#newArrivalProducts .productCardContainer .imageContainer {
+  padding: 90px 30px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+} 
+
+#newArrivalProducts .productCardContainer img {
+  width: 220px;
+  height: auto;
+
+  animation: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#newArrivalProducts .productCardContainer p {
+  color: gray;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#newArrivalProducts .productCardContainer h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#newArrivalProducts .productCardContainer h3 {
+  color: #c50215;
+  font-size: 20px;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+}
+
+#partners h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#partners .partnersContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#partners .imgContainer {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#partners .imgContainer img {
+  width: 280px;
+  height: auto;
+
+  animation: pulse;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#banner {
+  padding: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+#deal {
+  margin: 20px 0;
+}
+
+#deal h5 {
+  font-size: 45px;
+  text-align: center;
+}
+
+#deal .dealInnerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#deal .leftSide {
+  padding-left: 50px;
+  display: flex;
+  letter-spacing: 5px;
+  line-height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#deal .leftSide p {
+  font-weight: 200;
+}
+
+
+#deal .leftSide .priceContainer {
+  display:flex;
+  align-items: center;
+}
+
+#deal .leftSide h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+#deal .leftSide .priceContainer h2{
+  color: #c50215;
+  font-size: 25px;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+}
+
+#deal .leftSide .priceContainer h3{
+  margin-left: 10px;
+  font-size: 25px;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+}
+
+#deal .leftSide .quantityContainer {
+  margin: 20px 0;
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#deal .leftSide .quantityContainer h2{
+  font-size: 15px;
+  font-weight: 400;
+  color: #888;
+}
+
+#deal .leftSide .quantityContainer h3{
+  font-size: 15px;
+  font-weight: 400;
+  color: #888;
+}
+
+#deal .leftSide button{
+  cursor: pointer;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background-color: #222;
+  padding: 15px 65px;
+  border-radius: 50px;
+  border: none;
+}
+
+#deal .rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#deal .rightSide img {
+  width: 900px;
+  height: auto;
+
+  animation: pulse;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+#coupon{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#coupon .leftSide,#coupon .rightSide{
+  position: relative;
+  flex-basis: 50%;
+  padding: 190px 40px;
+}
+
+#coupon h2{
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+#coupon h1{
+  color: white;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#coupon button{
+  cursor: pointer;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background-color: #222;
+  padding: 15px 65px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+#coupon .contentContainer{
+  width: 60%;
+}
+
+
+
+#coupon .leftSide img,#coupon .rightSide img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  z-index: -100;
+}
+
+
+
+#contactModal{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+#contactModal .backgroundContainer {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+  z-index: 1;
+  background-color: black;
+}
+
+#contactModal .innerContainer{
+  position: relative;
+  color: black;
+  background-color: white;
+  opacity: 1;
+  z-index: 2;
+  display: flex;
+  padding: 20px;
+}
+
+#contactModal .leftSide{
+  flex-grow:1;
+}
+
+#contactModal .rightSide{
+  position: relative;
+  flex-grow:1;
+  color: white;
+  padding: 25px;
+  background-color: #222222;
+  line-height: 25px;
+}
+
+#contactModal .rightSide h1{
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#contactModal .rightSide li{
+  color: #aaaaaa;
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#contactModal .rightSide i{
+  font-size: 20px;
+}
+
+#contactModal .rightSide .iconContainer{
+  width: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+
+#contactModal .rightSide p{
+ margin-left: 20px;
+}
+
+#contactModal .rightSide .exitButton{
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  cursor: pointer;
+}
+
+#contactModal .rightSide .exitButton i{
+  font-size: 30px;
+}
+
+@media (min-width: 600px){
+
+}
+
+@media screen and (max-width: 375px){
+  #slider .shoeImage{
+    width: 250px;
+    position: relative;
+  }
+
+  #slider .middleContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+  }
+
+  #header .logoContainer .logo{
+    margin-top: 2px;
+  }
+
+  #slider .titleContainer{
+    margin: 15px 0;
+  }
+
+  #slider .titleContainer h3{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #slider .titleContainer h2{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #slider .button{
+    margin-top:12px;
+    font-size: 14px;
+  }
+
+  #slider .buttonContainer{
+    position: relative;
+    bottom: 0;
+  }
+
+
+  #ad .top .leftSide{
+    flex-basis: 100%;
+  }
+
+  #ad .top .rightSide .contentContainer{
+    margin: 50px 0;
+    margin-left: 4%;
+    width: 50%;
+  }
+
+  #ad .bottom .leftSide .contentContainer{
+    margin: 50px 0;
+    margin-right:4%;
+    width: 80%;
+  }
+
+  #ad .bottom .rightSide{
+    flex-basis: 100%;
+  }
+
+  #deal h5{
+    font-size: 27px;
+  }
+
+  #banner{
+    padding: 0;
+    width: 100%;
+  }
+
+  #deal .rightSide img{
+    width: 300px;
+  }
+
+  p,h1,h2,h3{
+    line-height: normal;
+  }
+
+  #deal .leftSide{
+    padding: 0;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  #deal .leftSide .quantityContainer{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #deal .leftSide .quantityContainer h2{
+    margin-bottom: 8px;
+  }
+
+  #coupon .leftSide,#coupon .rightSide{
+    flex-basis: 100%;
+  }
+
+  #coupon .leftSide{
+    text-align: center;
+  }
+  #coupon .contentContainer{
+    width: 100%;
+  }
+  #coupon h1{
+    margin: 24px 0;
+    font-size: 30px;
+  }
+  #coupon button{
+    margin-top: 0;
+  }
+    
+
+  #coupon .rightSide{
+    text-align: center;
+  }
+
+  #contactModal .leftSide{
+    display: none;
+  }
+  #slider .buttonContainer{
+    z-index: 1;
+  }
+
+    
+  #contactModal .innerContainer{
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  #contactModal .rightSide li{
+    font-size: 13px;
+  }
+
+  #contactModal .rightSide .exitButton i{
+    font-size: 24px;
+  }
+
+  #contactModal .rightSide .exitButton{
+    top: 5%;
+    right: 4%;
+  }
+
+  #slider{
+    height: 68vh;
+  }
+
+}
+
+
+
+
+
+
+
