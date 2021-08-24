@@ -135,7 +135,6 @@ body{
 
 #ad .top {
   display: flex;
-  flex-wrap: wrap;
 }
 
 #ad .top .leftSide {
@@ -270,7 +269,6 @@ body{
 
 #ad .bottom {
   display: flex;
-  flex-wrap: wrap;
 }
 
 #ad .bottom .rightSide {
@@ -437,12 +435,15 @@ body{
 
 #deal .leftSide p {
   font-weight: 200;
+  line-height: 0;
+  margin-bottom: 10px;
 }
 
 
 #deal .leftSide .priceContainer {
   display:flex;
   align-items: center;
+  margin: 20px 0;
 }
 
 #deal .leftSide h1 {
@@ -454,6 +455,7 @@ body{
   color: #c50215;
   font-size: 25px;
   letter-spacing: -1.5px;
+  line-height: 0;
   font-weight: 700;
 }
 
@@ -462,13 +464,23 @@ body{
   font-size: 25px;
   letter-spacing: -1.5px;
   font-weight: 700;
+  line-height: 0;
 }
 
 #deal .leftSide .quantityContainer {
-  margin: 20px 0;
   display:flex;
   width: 100%;
   justify-content: space-between;
+}
+
+
+#deal .leftSide h1{
+  line-height: normal;
+}
+
+#deal .leftSide .quantityContainer{
+  line-height: 2.5;
+  flex-direction: column;
 }
 
 #deal .leftSide .quantityContainer h2{
@@ -516,7 +528,6 @@ body{
 
 #coupon{
   display:flex;
-  flex-wrap: wrap;
 }
 
 #coupon .leftSide,#coupon .rightSide{
@@ -813,6 +824,11 @@ body{
   #slider{
     height: 68vh;
   }
+
+  #ad .top,#ad .bottom,#coupon{
+    flex-wrap: wrap;
+  }
+
 
 }
 
