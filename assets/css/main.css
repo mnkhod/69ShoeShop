@@ -19,6 +19,11 @@ body{
   width: 100%;
   left: 0;
   justify-content: center;
+  z-index: 100;
+}
+
+#header .logoContainer a{
+  cursor: pointer;
 }
 
 #header .logoContainer .logo{
