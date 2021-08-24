@@ -325,7 +325,6 @@ body{
 
 #newArrivalProducts .productCardContainer {
   padding: 10px;
-  cursor: pointer;
 }
 
 #newArrivalProducts .productCardContainer .imageContainer {
@@ -679,9 +678,14 @@ body{
 
 }
 
+
+
+
+
 @media screen and (max-width: 375px){
   #slider .shoeImage{
-    width: 250px;
+    width: auto;
+    height: 60px;
     position: relative;
   }
 
@@ -707,11 +711,11 @@ body{
 
   #slider .titleContainer h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
   }
 
   #slider .button{
-    margin-top:12px;
+    margin-top:5px;
     font-size: 14px;
   }
 
