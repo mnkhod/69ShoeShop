@@ -325,6 +325,7 @@ body{
 
 #newArrivalProducts .productCardContainer {
   padding: 10px;
+  cursor: pointer;
 }
 
 #newArrivalProducts .productCardContainer .imageContainer {
